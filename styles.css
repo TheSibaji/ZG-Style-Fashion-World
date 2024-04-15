@@ -1,0 +1,358 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    /* width: 100%; */
+}
+
+header h1 {
+    /* background-color: #982323; */
+    font-family:  Poppins;
+    margin-left: 10px;
+    font-weight: 900;
+    /* font-size: 30px; */
+}
+
+nav {
+    /* background-color: #000000; */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+nav ul {
+    /* background-color: #b25b5b; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    background-color: rgb(30, 30, 30);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+nav ul #touch {
+    background-color: #17e2c0;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+nav ul #touch a{
+    color: black;
+}
+nav ul #touch:hover {
+    background-color: #3fffdff1;
+}
+
+
+nav li:hover,
+.featured-products .card:hover {
+    background-color: #3f3f3fd6;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url('img/hero.webp');
+    background-size: cover; 
+    background-position: auto; 
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    padding: 50px;
+    margin: 1rem;
+    height: 30rem;
+    border-radius: .5rem;
+}
+
+.hero-content {
+    /* background-color: red; */
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8)
+}
+
+.hero-content h2 {
+    /* background-color: #fff; */
+    width: 50%;
+    text-align: start;
+    font-size: 6rem;
+    margin: 0 auto 10px 0;
+    font-family: Poppins, sans-serif;
+}
+h2 span {
+    color: #17e2c0;
+}
+
+.hero-content p {
+    /* background-color: #fff; */
+    width: 70%;
+    text-align: start;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+.hero-arrow {
+    /* background-color: red; */
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8)
+}
+
+.hero-arrow p {
+    font-size: 22px;
+}
+
+.hero-arrow svg,
+.card .arrow svg,
+.contact .arrow svg { 
+    background-color: rgba(4, 4, 4, 0.34);
+    margin-right: 10px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 30px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border: .02px solid rgb(96, 96, 96);
+    border-radius: 30px;
+    /* transition: background-color 0.3s ease, transform 0.3s ease; */
+}
+
+.hero-arrow:hover svg,
+.card .arrow:hover svg,
+.contact .arrow:hover svg {
+    background-color: #3030306e; 
+    transform: scale(1.1);
+}
+
+.featured-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    /* margin: 0 1rem; */
+    border-radius: .5rem;
+}
+
+.featured-products .card {
+    background-color: #1e1e1ec1;
+    color: rgb(255, 255, 255);
+    margin: auto 10px;
+    padding: 20px 15px 0 15px;
+    border-radius: .5rem;
+    /* width: 25%;*/
+    height: 250px;
+}
+
+.featured-products .card p {
+    font-family: "Roboto Mono", monospace;
+    padding: 10px 0;
+}
+
+.card .arrow {
+    /* background-color: #615858; */
+    padding: auto 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8)
+}
+.card h2 {
+    font-size: 2rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+.card p {
+    color:  rgb(158, 157, 154);
+}
+.card .arrow p {
+    font-size: 1.5rem;
+    color:  rgb(255, 255, 255);
+}
+
+.brand-logos {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 1.5rem 0;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 5px 20px;
+}
+
+.big-box1 img {
+    width: 740px; 
+    height: 495px;
+    border-radius: 10px;
+}
+
+.big-box2 {
+    background-color: #38383874;
+    margin-left: 20px;
+    padding: 0 2rem 0 2rem;
+    border-radius: 10px;
+}
+
+.big-box2 h5 {
+    margin-bottom: 10rem;
+    font-family: Poppins, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.big-box2 h2 {
+    font-family: Poppins, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+}
+
+.big-box2 p {
+    font-family: "Roboto Mono", monospace;
+    color: rgb(158, 157, 154);
+}
+
+.contact {
+    background-color: #38ddc1f1;
+    margin: 1rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+}
+#left {
+    width: 70%;
+}
+
+.contact #left h4 {
+    font-family: Poppins, sans-serif;
+    color: rgb(18, 18, 18);
+}
+
+.contact #left h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 4rem;
+    padding: 1rem 0;
+}
+
+.contact .arrow {
+    background-color: #000000e1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 14rem;
+    margin-top: 9rem;
+    height: 30px;
+    width: 10.5rem;
+    padding: 15px 15px 10px 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PHONE */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
